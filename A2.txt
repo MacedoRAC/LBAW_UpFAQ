@@ -26,3 +26,18 @@ razoável do esforço necessário para o implementar [Ambler04] . Uma user story, a
 Tipicamente uma user story segue o seguinte template [Dennis10] :
 
 “As a [user], I want [function], so that [value]”
+
+
+Para o sistema PerguntaseRespostasColaborativas consideram-se as user stories que se apresentam na seguinte Tabela.
+
+	Identifier	Name	Priority	Description
+	US01		Signin	 high		Como Visitante(Utilizador não-autenticado) quero puder registar-me no sistema para poder fazer login
+	US02		Login	 high		Como Visitante(Utilizador não-autenticado) quero puder autenticar-me no sistema para ter acesso a outros privilégios
+	US03		LostPass high		Como Visitante(Utilizador não-autenticado) quero puder recuperar a minha password
+	
+	US04		Search	 high		Como User(Utilizador genérico) quero puder consultar todas as perguntas
+	US05		Like	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs up" para cotar uma resposta a uma pergunta
+	US06		Dislike	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs down" para cotar uma resposta a uma pergunta
+	US07		Open	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma pergunta
+	US08		Post	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma resposta a uma pergunta
+	US09		Profile	 high		Como Logged(Utilizador autenticado)	quero puder consultar  e modificar a informação do meu perfil
