@@ -1,0 +1,28 @@
+====== A2: Atores. User stories ======
+
+Este artefacto contém a especificação dos atores e das respetivas users stories, 
+funcionando como documentação ágil dos requisitos do projeto.
+
+===== Atores =====
+Um ator representa qualquer entidade que interage com o sistema que está a ser especificado. 
+Isto pode incluir pessoas (não apenas o utilizador final), sistemas externos e outras organizações. 
+Atores são sempre externos ao sistema que está a ser modelado; nunca são parte do sistema [Ambler04] .
+
+
+
+
+
+
+
+
+
+Uma user story é uma definição de alto nível de um requisito contendo 
+apenas a informação necessária para que os responsáveis pelo desenvolvimento possam produzir uma estimativa 
+razoável do esforço necessário para o implementar [Ambler04] . Uma user story, a descrição sumária de uma potencial
+ interação com o sistema por parte de um dos seus utilizadores, foca apenas requisitos de comportamento e não os aspetos técnicos do desenho. 
+ As user stories devem ter associada uma prioridade (alta ou essencial, média ou condicional e baixa ou opcional) que indica a necessidade de serem incluídas nas fases de desenho (design) e implementação do projeto.
+ Uma equipa de analistas experientes inclui também uma estimativa do esforço necessário para a sua implementação.
+
+Tipicamente uma user story segue o seguinte template [Dennis10] :
+
+“As a [user], I want [function], so that [value]”
