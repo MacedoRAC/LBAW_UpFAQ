@@ -8,7 +8,7 @@ Um ator representa qualquer entidade que interage com o sistema que está a ser e
 Isto pode incluir pessoas (não apenas o utilizador final), sistemas externos e outras organizações. 
 Atores são sempre externos ao sistema que está a ser modelado; nunca são parte do sistema [Ambler04] .
 
-
+---> os actores no nosso caso nao deveriam ser os utilizadores, utilizadores nao registados e administradores?
 
 
 
@@ -31,13 +31,25 @@ Tipicamente uma user story segue o seguinte template [Dennis10] :
 Para o sistema PerguntaseRespostasColaborativas consideram-se as user stories que se apresentam na seguinte Tabela.
 
 	Identifier	Name	Priority	Description
-	US01		Signin	 high		Como Visitante(Utilizador não-autenticado) quero puder registar-me no sistema para poder fazer login
-	US02		Login	 high		Como Visitante(Utilizador não-autenticado) quero puder autenticar-me no sistema para ter acesso a outros privilégios
-	US03		LostPass high		Como Visitante(Utilizador não-autenticado) quero puder recuperar a minha password
+	US01		Signin	 high		Como Visitante(Utilizador não-autenticado) quero puder registar-me no sistema para poder fazer login, --- --- --- so 1
+	US02		Login	 high		Como Visitante(Utilizador não-autenticado) quero puder autenticar-me no sistema para ter acesso a outros privilégios --- --- --- so 1
+	US03		LostPass high		Como Visitante(Utilizador não-autenticado) quero puder recuperar a minha password --- --- --- so 3
 	
-	US04		Search	 high		Como User(Utilizador genérico) quero puder consultar todas as perguntas
-	US05		Like	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs up" para cotar uma resposta a uma pergunta
-	US06		Dislike	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs down" para cotar uma resposta a uma pergunta
-	US07		Open	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma pergunta
-	US08		Post	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma resposta a uma pergunta
-	US09		Profile	 high		Como Logged(Utilizador autenticado)	quero puder consultar  e modificar a informação do meu perfil
+	US04		List	 high		Como User(Utilizador genérico) quero puder consultar todas as perguntas --- --- --- so 2
+	US05		Like	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs up" para cotar uma resposta a uma pergunta --- --- --- so 2
+	US06		Dislike	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs down" para cotar uma resposta a uma pergunta --- --- --- so 2
+	US07		Open	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma pergunta --- --- --- so 4 (podem ser escolha multipla ou pergunta aberta)
+	US08		Post	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma resposta a uma pergunta --- --- --- so 3
+	US09		Profile	 high		Como Logged(Utilizador autenticado)	quero puder consultar  e modificar a informação do meu perfil --- --- --- so 3
+
+	---> Adicionados por Pedro Faria
+	US10		Filter medium		Como Logged(Utilizador autenticado)	quero consultar perguntas usando filtros --- --- --- so 4
+	US11		Delete medium		Como Adminstrator	quero apagar perguntas --- --- --- so 4
+	US12		Changeview medium	Como Logged(Utilizador autenticado)	quero consultar perguntas fazendo display em lista, grelha... --- --- --- so 3
+	US13		Search medium		Como Logger(Utilizador autenticado)	quero consultar perguntas relativas a tema --- --- --- so 3
+	US14		Rank	 medium		Como User(Utilizador genérico)		quero puder visualizar quais os utilizadores com melhores pontuações --- --- --- so 2
+	US15		Notify	 medium		Como Adminstrator quero notificar utilizadores --- --- --- so 3
+	US16		Close	 high		Como User(Utilizador genérico) quero puder fechar uma pergunta feita por mim --- --- --- so 2
+	US17		Follow	 medium		Como User(Utilizador genérico) quero seguir topicos de perguntas --- --- --- so 5
+	US18		Edit	 high		Como User(Utilizador genérico) quero editar uma pergunta (apenas se ainda nao tiver sido respondida) --- --- --- so 2
+	US19		AskRemove medium	Como User(Utilizador genérico) quero fazer pedido ao admin para remover pergunta/resposta --- --- --- so 6
