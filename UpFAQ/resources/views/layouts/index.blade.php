@@ -8,11 +8,13 @@
 			<!-- Bootstrap CSS -->
 			<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 			<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
+			<!-- FONT AWSOME -->
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 			<!-- Other CSS files -->
 			<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 			<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
 		
-		<link rel = "shortcut icon" href = "{{ asset('img/favicon.ico') }}">
+		<link rel = "shortcut icon" href = "{{ asset('img/favicon.png') }}">
 		<title>UpFAQ</title>
 	</head>
 	<body>
@@ -21,7 +23,9 @@
 		<!-- NAVBAR END -->
 
 		<!-- PAGE CONTENT -->
-		@yield('content')
+		<div class="container">
+			@yield('content')
+		</div>
 		<!-- PAGE CONTENT END -->
 	</body>
 	<footer>
@@ -33,8 +37,6 @@
 		<script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('js/npm.js') }}"></script>
-
 		<!-- SCRIPT -->
 		<script src="{{ asset('js/script.js') }}"></script>
 	</footer>
