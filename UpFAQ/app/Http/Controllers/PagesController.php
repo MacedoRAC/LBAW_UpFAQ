@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class PagesController extends Controller {
 
 	/**
-	 * Display a listing of the resource.
+	 * Display homepage
 	 *
-	 * @return Response
+	 * @return homepage view
 	 */
 	public function index()
 	{
-		//
+		return view('pages.index');
 	}
 
 	/**
