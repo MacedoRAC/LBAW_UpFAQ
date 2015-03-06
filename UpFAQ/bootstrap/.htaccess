@@ -6,8 +6,8 @@ DirectoryIndex index.php
     </IfModule>
 
     RewriteEngine On
-    # Path para o projeto com / antes de depois ou seja http://localhost/test/my-app/public
-    RewriteBase /LBAW_UpFAQ/UpFAQ/public/
+	# Path para o projeto com / antes de depois ou seja http://localhost/test/my-app/public
+	RewriteBase /LBAW_UpFAQ/UpFAQ/public/
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
