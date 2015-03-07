@@ -14,6 +14,7 @@
 			<!-- Other CSS files -->
 			<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 			<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+			<link href="{{ asset('css/footer.css') }}" rel="stylesheet">
 		
 		<link rel = "shortcut icon" href = "{{ asset('img/favicon.png') }}">
 		<title>UpFAQ</title>
