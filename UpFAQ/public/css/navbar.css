@@ -6,13 +6,16 @@ body{
 	box-shadow: none;
 	border: none;
 	border-radius: 0;
-	height: 85px;
+	height: 50px;
 	background: #455a64;
+	z-index: 100;
 }
 
-#myNavbar .collapse{
-	padding-top: 35px;
+.navbar-brand{
+	min-width: 6em;
+	padding: 0;
 }
+
 
 #menuOptions>li{
 	margin-left: 8px;
@@ -39,11 +42,56 @@ body{
 	box-shadow: inset #eceff1 0 -6px 0 0;
 }
 
-.navbar-brand{
-	min-width: 10em;
-	padding: 0;
+#menuOptions form .form-group{
+	border-bottom: 0.2em solid #eceff1;
+
+}
+#menuOptions #search{
+	border: none;
+	border-radius: 0;	
+	background-color: transparent;
+	box-shadow: none;
+   color: #eceff1;
 }
 
-.navbar-brand>img{
-	max-width: 100%;
+#menuOptions #searchBtn{
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: #455a64;
+	text-shadow: none;
+	color: #eceff1;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#menuOptions #searchBtn:focus,
+#menuOptions #searchBtn:hover{
+	background: #78909c;
+}
+
+@media screen and (min-width: 768px) {
+    #myNavbar {
+        height: 85px;
+    }
+
+	#myNavbar .collapse{
+		padding-top: 35px;
+		background: transparent;
+	}
+
+	#navContainer .navbar-collapse{
+		background-color: transparent;
+	}
+
+	.navbar-brand{
+		min-width: 10em;
+		padding: 0;
+	}
+	
+	.navbar-brand>img{
+		max-width: 100%;
+	}
 }

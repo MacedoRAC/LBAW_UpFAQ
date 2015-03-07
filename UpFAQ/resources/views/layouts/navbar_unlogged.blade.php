@@ -23,10 +23,11 @@
         <li>
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Search" id="search">
+              
+              <button type="submit" class="btn btn-default" id="searchBtn"><i class="fa fa-search fa-lg"></i>
+              </button>
             </div>
-            <button type="submit" class="btn btn-default"><i class="fa fa-search fa-lg"></i>
-            </button>
           </form>
         </li>
 

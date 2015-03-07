@@ -1,0 +1,18 @@
+.row{
+	margin: 0;
+	max-width: 100%;
+}
+
+/* HOMEPAGE */
+
+
+#portoPhoto,
+#portoPhoto img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+#portoPhoto img{
+	top: -180px;
+}

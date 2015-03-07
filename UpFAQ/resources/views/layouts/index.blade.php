@@ -10,6 +10,7 @@
 			<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
 			<!-- FONT AWSOME -->
 			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+			<!-- ACCORDION -->
 			<!-- Other CSS files -->
 			<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 			<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
@@ -18,15 +19,15 @@
 		<title>UpFAQ</title>
 	</head>
 	<body>
-		<!-- NAVBAR -->
-		@include('layouts.navbar_unlogged')
-		<!-- NAVBAR END -->
+		<div class="row">
+			<!-- NAVBAR -->
+			@include('layouts.navbar_unlogged')
+			<!-- NAVBAR END -->
 
-		<!-- PAGE CONTENT -->
-		<div class="container">
+			<!-- PAGE CONTENT -->
 			@yield('content')
+			<!-- PAGE CONTENT END -->
 		</div>
-		<!-- PAGE CONTENT END -->
 	</body>
 	<footer>
 		<!-- PAGE FOOTER -->
@@ -37,6 +38,7 @@
 		<script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<!-- ACCORDION -->
 		<!-- SCRIPT -->
 		<script src="{{ asset('js/script.js') }}"></script>
 	</footer>
