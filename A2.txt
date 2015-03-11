@@ -3,53 +3,43 @@
 Este artefacto contém a especificação dos atores e das respetivas users stories, 
 funcionando como documentação ágil dos requisitos do projeto.
 
+Para o sistema **PerguntaseRespostasColaborativas ** consideram-se os atores que se apresentam na Figura 1 e que são descritos na Tabela 1.
+
+{{actors.png?200|}}\\
+Figura 1: Atores.
+
+^ Identifier  ^ Description                                                                                                                     ^ Examples  ^
+| User        | Utilizador genérico; pode consultar todas as perguntas, e votar nas respostas                                                        | n/a       |
+| Visitante   | Utilizador não-autenticado; pode registar-se no sistema e com esses dados autenticar-se                                         | n/a       |
+| Logged      | Utilizador autenticado; pode gerir o seu perfil.Criar, responder e seguir perguntas ou comentar respostas dadas                 | Paulo     |
+| Author      | Utilizador autenticado que criou a pergunta;pode editar ou encerrar a pergunta                                                  | André     |
+| Admin       | Utilizador autenticado; assegura o cumprimento das regras do website por parte dos utilizadores e auxilia-os em caso de dúvida  | admin     |
+Tabela 1: Descrição dos atores.
 ===== Atores =====
-Um ator representa qualquer entidade que interage com o sistema que está a ser especificado. 
-Isto pode incluir pessoas (não apenas o utilizador final), sistemas externos e outras organizações. 
-Atores são sempre externos ao sistema que está a ser modelado; nunca são parte do sistema [Ambler04] .
-
----> os actores no nosso caso nao deveriam ser os utilizadores, utilizadores nao registados e administradores?
-
-
-
-
-
-
-
-Uma user story é uma definição de alto nível de um requisito contendo 
-apenas a informação necessária para que os responsáveis pelo desenvolvimento possam produzir uma estimativa 
-razoável do esforço necessário para o implementar [Ambler04] . Uma user story, a descrição sumária de uma potencial
- interação com o sistema por parte de um dos seus utilizadores, foca apenas requisitos de comportamento e não os aspetos técnicos do desenho. 
- As user stories devem ter associada uma prioridade (alta ou essencial, média ou condicional e baixa ou opcional) que indica a necessidade de serem incluídas nas fases de desenho (design) e implementação do projeto.
- Uma equipa de analistas experientes inclui também uma estimativa do esforço necessário para a sua implementação.
-
-Tipicamente uma user story segue o seguinte template [Dennis10] :
-
-“As a [user], I want [function], so that [value]”
-
+Na nossa plataforma, consideramos 3 atores diferentes: utilizadores não registados, utilizadores registados, administrados.
 
 Para o sistema PerguntaseRespostasColaborativas consideram-se as user stories que se apresentam na seguinte Tabela.
 
-	Identifier	Name	Priority	Description
-	US01		Signin	 high		Como Visitante(Utilizador não-autenticado) quero puder registar-me no sistema para poder fazer login, --- --- --- so 1 sp
-	US02		Login	 high		Como Visitante(Utilizador não-autenticado) quero puder autenticar-me no sistema para ter acesso a outros privilégios --- --- --- so 1 sp
-	US03		LostPass high		Como Visitante(Utilizador não-autenticado) quero puder recuperar a minha password --- --- --- so 3 sp
-	
-	US04		List	 high		Como User(Utilizador genérico) quero puder consultar todas as perguntas --- --- --- so 2 sp
-	US05		Like	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs up" para cotar uma resposta a uma pergunta --- --- --- so 2 sp
-	US06		Dislike	 high		Como User(Utilizador genérico) quero puder assinalar um "thumbs down" para cotar uma resposta a uma pergunta --- --- --- so 2 sp
-	US07		Open	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma pergunta --- --- --- so 4 sp (podem ser escolha multipla ou pergunta aberta)
-	US08		Post	 high		Como Logged(Utilizador autenticado)	quero puder colocar uma resposta a uma pergunta --- --- --- so 3 sp
-	US09		Profile	 high		Como Logged(Utilizador autenticado)	quero puder consultar  e modificar a informação do meu perfil --- --- --- so 3 sp
-
-	---> Adicionados por Pedro Faria
-	US10		Filter medium		Como Logged(Utilizador autenticado)	quero consultar perguntas usando filtros --- --- --- so 4 so
-	US11		Delete medium		Como Adminstrator	quero apagar perguntas --- --- --- so 4 sp
-	US12		Changeview medium	Como Logged(Utilizador autenticado)	quero consultar perguntas fazendo display em lista, grelha... --- --- --- so 3 so
-	US13		Search medium		Como Logged(Utilizador autenticado)	quero consultar perguntas relativas a tema --- --- --- so 3 sp
-	US14		Rank	 medium		Como User(Utilizador genérico)		quero puder visualizar quais os utilizadores com melhores pontuações --- --- --- so 2 sp
-	US15		Notify	 medium		Como Adminstrator quero notificar utilizadores --- --- --- so 3 sp
-	US16		Close	 high		Como Logged(Utilizador autenticado) quero puder fechar uma pergunta feita por mim --- --- --- so 2 sp
-	US17		Follow	 medium		Como Logged(Utilizador autenticado) quero seguir topicos de perguntas --- --- --- so 5 sp
-	US18		Edit	 high		Como Logged(Utilizador autenticado) quero editar uma pergunta (apenas se ainda nao tiver sido respondida) --- --- --- so 2 sp
-	US19		AskRemove medium	Como Logged(Utilizador autenticado) quero fazer pedido ao admin para remover pergunta/resposta --- --- --- so 6 sp
+^ Identifier  ^ Name        ^ Priority  ^ Description                                                                                                                     ^
+| **US01**    | List        | high      | Como User (Utilizador genérico) quero poder consultar todas as perguntas, so 2 sp                                               |
+| **US02**    | Like        | high      | Como User (Utilizador genérico) quero poder assinalar um "thumbs up" para votar numa resposta/pergunta, so 2 sp                 |
+| **US03**    | Dislike     | high      | Como User (Utilizador genérico) quero poder assinalar um "thumbs down" para votar numa resposta/pergunta, so 2 sp               |
+| US04   | Rank        | medium    | Como User (Utilizador genérico) quero poder visualizar quais os utilizadores com melhores pontuações, so 2 sp                   |
+| **US05**    | Signin      | high      | Como Visitante (Utilizador não-registado) quero poder registar-me no sistema para fazer login, so 1 sp                          |
+| **US06**    | Login       | high      | Como Visitante (Utilizador não-autenticado) quero poder autenticar-me no sistema para ter acesso a outros privilégios, so 1 sp  |
+| **US07**    | LostPass    | high      | Como Visitante (Utilizador não-autenticado) quero poder recuperar a minha password, so 3 sp                                     |
+| **US08**    | Open        | high      | Como Logged (Utilizador autenticado) quero poder colocar uma pergunta, so 4 sp (pode ser escolha múltipla ou pergunta aberta)   |
+| **US09**    | Post        | high      | Como Logged (Utilizador autenticado) quero poder colocar uma resposta, so 3 sp                                                  |
+| **US10**        | Profile     | high      | Como Logged (Utilizador autenticado) quero poder consultar  e modificar a informação do meu perfil, so 3 sp                     |
+| US11        | Filter      | medium    | Como Logged (Utilizador autenticado) quero consultar perguntas utilizando filtros, so 4 sp                                      |
+| US12        | Change      | medium    | Como Logged(Utilizador autenticado) quero consultar perguntas fazendo display em lista, grelha, so 3 sp                         |
+| US13        | Search      | medium    | Como Logged (Utilizador autenticado) quero consultar perguntas que contenham uma ou mais tags pesquisadas, so 3 sp              |
+| US14        | Follow      | medium    | Como Logged (Utilizador autenticado) quero seguir perguntas, so 2 sp                                                            |
+| US15        | AskRemove   | medium    | Como Logged (Utilizador autenticado) quero fazer pedido ao administrador para remover uma pergunta/resposta, so 2 sp            |
+| US16    | EditAnswer  | medium    | Como Logged (Utilizador autenticado) quero editar a minha resposta a uma pergunta, so 2 sp                                         |
+| US17        | AddComment  | medium    | Como Logged (Utilizador autenticado) quero adicionar um comentário a uma resposta, so 2sp                                       |
+| US18        | Delete      | medium    | Como Administrador quero apagar ou editar perguntas, so 4 sp                                                                     |
+| US19        | Notify      | medium    | Como Administrador quero notificar utilizadores, so 3 sp                                                                        |
+| US20        | CloseAdmin  | medium    | Como Administrador quero bloquear uma pergunta, so 3sp                                                                          |
+| **US21**        | Close       | high      | Como Author (autor da pergunta) quero poder fechar ou editar uma pergunta feita por mim, so 2 sp                                |
+Tabela 2: User stories.                     
