@@ -20,23 +20,23 @@
 			        <ul class="col-lg-12">
 			        	<li class="col-lg-12">
 			        		<img src="{{ asset('img/avatar.png') }}" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+			        		<a href="{{ route('showQuestion') }}"><p class="col-lg-9">Put the question here?</p></a>
 			        	</li>
 			        	<li class="col-lg-12">
 			        		<img src="{{ asset('img/avatar.png') }}" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+			        		<a href="{{ route('showQuestion') }}"><p class="col-lg-9">Put the question here?</p></a>
 			        	</li>
 			        	<li class="col-lg-12">
 			        		<img src="{{ asset('img/avatar.png') }}" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+			        		<a href="{{ route('showQuestion') }}"><p class="col-lg-9">Put the question here?</p></a>
 			        	</li>
 			        	<li class="col-lg-12">
 			        		<img src="{{ asset('img/avatar.png') }}" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+			        		<a href="{{ route('showQuestion') }}"><p class="col-lg-9">Put the question here?</p></a>
 			        	</li>
 			        	<li class="col-lg-12">
 			        		<img src="{{ asset('img/avatar.png') }}" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+			        		<a href="{{ route('showQuestion') }}"><p class="col-lg-9">Put the question here?</p></a>
 			        	</li>
 			        </ul>
 			      </div>

@@ -57,6 +57,12 @@ ul li{
 	margin-top: 70px;
 }
 
+.accordion-inner ul li a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #333;
+}
+
 .accordion-inner ul li p{
 	padding-top: 10px;
 }

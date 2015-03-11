@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/question', ['as' => 'showQuestion', 'uses' => 'QuestionsController@show']);
