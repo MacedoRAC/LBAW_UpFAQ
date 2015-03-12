@@ -85,7 +85,7 @@
 		<div class="accordion col-lg-4 col-md-4 col-sm-12 col-xs-12" id="topUsers" style="top:-120px;">
 		  <div class="accordion-group">
 		    <div class="accordion-heading col-lg-12">
-		      <a class="accordion-toggle col-lg-2" data-toggle="collapse" data-parent="#topUsers" href="#collapseThree">
+		      <a class="accordion-toggle col-lg-1" data-toggle="collapse" data-parent="#topUsers" href="#collapseThree">
 		        <i class="glyphicon glyphicon-chevron-down"></i>
 		      </a>
 		      <p class="col-lg-10">Top users of February</p>

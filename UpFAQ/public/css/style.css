@@ -83,3 +83,82 @@ ul li{
 	margin-top: 0;
 	margin-bottom: 5px;
 }
+
+
+/* SHOW QUESTION AND ANSWERS PAGE */
+#questAnsCont,
+#questHolder{
+	padding: 0;
+}
+
+#questHolder .header{
+	padding: 10px 0;
+}
+#questHolder .header{
+	background: #CFD8DC;
+}
+
+#questHolder ul li{
+	display: inline-block;
+	padding-right: 0;
+	padding-top: 0;
+}
+
+#questHolder .creationDate,
+#questHolder .tags{
+	text-align: right;
+}
+
+#questHolder .tags{
+	margin-top: 20px;
+	padding-top: 0;
+}
+
+#questHolder .tags li{
+	padding: 3px;
+	font-size: 0.8em;
+	background: #2f95d8;
+	color: #333;
+	border-radius: 3px;
+}
+
+#questHolder p,
+#questHolder h3{
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+#questHolder h3{
+	color: #455A64;
+}
+
+#questHolder .creationDate{
+	font-size: 0.9em;
+	padding-right: 15px;
+	margin-top: 10px;
+}
+
+#questHolder .question{
+	padding-left: 15px;
+}
+
+#questHolder .icons{
+	text-align: right;
+	font-size: 1.15em;
+}
+
+#questHolder .icons a{
+	color: #2f95d8;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#questHolder .icons a:hover{
+	color: #333;
+	
+}

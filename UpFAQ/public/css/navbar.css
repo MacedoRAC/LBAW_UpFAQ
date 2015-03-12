@@ -1,5 +1,10 @@
 body{
 	background: #eceff1;
+	max-height: 100%;
+}
+
+html{
+	max-height: 100%;
 }
 
 #myNavbar{
