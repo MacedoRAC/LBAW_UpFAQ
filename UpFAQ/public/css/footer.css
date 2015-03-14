@@ -1,6 +1,7 @@
 #myFooter{
 	background:#c2c2c2; 
 	height: 300px;
+	margin-top: 70px;
 }
 
 #myFooter #form .form-group>div{

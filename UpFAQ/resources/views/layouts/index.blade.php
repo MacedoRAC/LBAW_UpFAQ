@@ -28,12 +28,13 @@
 			<!-- PAGE CONTENT -->
 			@yield('content')
 			<!-- PAGE CONTENT END -->
+			
+			<!-- PAGE FOOTER -->
+			@include('layouts.footer')
+			<!-- PAGE FOOTER END-->
 		</div>
 	</body>
 	<footer>
-		<!-- PAGE FOOTER -->
-		@include('layouts.footer')
-		<!-- PAGE FOOTER END-->
 
 		<!-- JQuery -->
 		<script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
