@@ -27,3 +27,42 @@
 #profile_information .image_banner{
 	padding-top: 60px;
 }
+
+#profile_information .achiev_table{
+	position: relative;
+}
+
+#profile_information .achiev_table .img{
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+}
+
+#profile_information .main_achiev{
+	width: 700px;
+	height: 700px;
+	padding-bottom: 40px;
+}
+
+
+#profile_information .main_achiev p {
+	position: absolute;
+  	padding: 10px;
+  	padding-left: 100px;
+  	margin-top: 480px;
+  	margin-left: 520px;
+  	font-size: 28px;
+  	width: 2000px;
+}
+
+
+.main_achiev h2 {
+  	position: absolute;
+	margin-top: 360px;
+	margin-left: 520px;
+	font-size: 40px;
+	width: inherit;
+	text-indent: inherit;
+	text-decoration: underline;
+	text-align: center;
+}
