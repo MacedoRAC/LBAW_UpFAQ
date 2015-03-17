@@ -1,5 +1,8 @@
 @extends('layouts.index')
 
+@section('cssFiles')
+	<link href="{{ asset('css/showQuestion.css') }}" rel="stylesheet">
+@stop
 
 @section('content')
 
