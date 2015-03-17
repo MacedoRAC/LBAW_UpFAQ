@@ -1,0 +1,29 @@
+/* PORFILE */
+#profile_information{
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+#profile_information .container{
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+#profile_information .profile_votes{
+	margin-top: 70px;
+}
+
+#profile_information .profile_votes2{
+	margin-bottom: 15px;
+}
+
+#profile_information .achievements{
+	margin-top: 60px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: #455a64;
+}
+
+#profile_information .image_banner{
+	padding-top: 60px;
+}
