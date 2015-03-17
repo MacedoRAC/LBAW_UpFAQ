@@ -25,9 +25,8 @@
 	<div class="achievements">
 		<div class="container">
 			<img class="col-lg-offset-3 col-lg-6 image_banner" src="{{ asset('img/banner_achievents.png') }}" alt="Achivements">
-			<div class="carousel-caption col-lg-12">
-				<!--<img class="col-lg-offset-4 col-lg-2" src="{{ asset('img/ppic.jpg') }}" alt="profile avatar">-->
-			</div>	
+				<img class="col-lg-offset-4 col-lg-2" src="{{ asset('img/achiev1.png') }}" alt="achiev1">
+				<img class="col-lg-offset-4 col-lg-2" src="{{ asset('img/achiev2.png') }}" alt="achiev2">
 		</div>
 	</div>
 </div>
