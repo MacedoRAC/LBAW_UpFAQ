@@ -14,3 +14,5 @@
 Route::get('/', 'PagesController@index');
 
 Route::get('/profile', 'PagesController@show_perfil');
+
+Route::get('/question', ['as'=>'showQuestion', 'uses'=>'QuestionsController@show']);
