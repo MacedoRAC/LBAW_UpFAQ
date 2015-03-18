@@ -1,0 +1,34 @@
+====== Requisitos suplementares ======
+
+Uma regra de negócio  é o que define a forma de fazer o negócio, refletindo a política interna, o processo definido e/ou as regras básicas de conduta. Um requisito técnico são instruções que definem como atingir o objetivo de negócio. Em geral, refletem funções que o usuário precisa realizar para atingir o objetivo do sistema ou funções de apoio à estratégia do negócio. Uma restrição ao projeto limita o grau de liberdade na procura da solução [[biblio|[Dextra] ]].
+
+===== Regras de negócio =====
+
+^ Identifier  ^ Name         ^ Description                                                              ^
+| BR01        | Propriedade  | As perguntas só podem ser editadas pelo autor (ator Autor) da pergunta.  |
+| BR02        | Comportamento| Um utilizador autenticado só pode cometer três infrações antes de ser adicionado à "blacklist".  |
+| BR03        | Participação| Só os utilizadores registados podem responder a uma pergunta.  |
+| BR04        | Pesquisa  | Só os utilizadores registados podem ter acesso à pesquisa utilizando filtros.  |
+
+===== Requisitos técnicos =====
+
+
+| TR01 | Disponibilidade | O sistema deve estar disponível 90% do tempo no período de uma semana. |
+| TR02 | Usabilidade | O sistema deve ser intuitivo de utilizar. |
+| TR03 | Acessibilidade | O sistema deve estar disponível e adaptado para todos os navegadores de internet.|
+| TR04 | Portabilidade | O sistema do lado do servidor deve funcionar em qualquer sistema operativo. (?)|
+| TR05 | Segurança | O sistema deve garantir a proteção dos dados do utilizador (encriptação das password com salt) e verificar os privilégios no acesso às diversas páginas.|
+| TR06 | Base de Dados | Deve ser usado o sistema de gestão de bases de dados PostgreSQL 9.1.|
+| TR07 | Frameworks | Deve ser utilizada a framework de PHP Laravel e a framework Bootstrap para HTML, CSS e JS.|
+| TR08 | Aplicação Web | As páginas do sistema devem ser dinâmicas (HTML5, jQuery, CSS3, PHP).|
+| TR09 | Robustez | O sistema deve ter a capacidade de tratar eventuais excepções ao seu funcionamento normal que possam ocorrer.|
+| TR10 | Desempenho | O sistema deve ter um tempo de resposta suficientemente rápido.|
+| TR11 | Escalabilidade | O sistema deve estar preparado para suportar o aumento do número de utilizadores.|
+| TR12 | Ética | O sistema deve respeitar os princípios éticos no desenvolvimento de software (aceitar a responsabilidade pelo trabalho realizado e fornecer suporte para a resolução de um problema).|
+
+===== Restrições ===== 
+
+C01 | Limite de Entrega | O sistema deve estar pronto a ser utilizado na data de apresentação do projeto.
+--- //LBAW 2014/15//
+
+[[..:lbaw1444/index|[back to main] ]]
