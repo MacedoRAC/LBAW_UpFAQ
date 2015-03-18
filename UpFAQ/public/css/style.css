@@ -78,3 +78,21 @@ ul li{
 	margin-top: 0;
 	margin-bottom: 5px;
 }
+
+
+/* MODALS */
+
+#signInModal .modal-content{
+	border-radius: 0;
+	border: none;
+	background: #ECEFF1;
+}
+
+#signInModal .modal-body,
+#signInModal .nav li{
+	padding: 0;
+}
+
+#signInModal .nav{
+	background: #455A64;
+}

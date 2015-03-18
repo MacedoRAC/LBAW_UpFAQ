@@ -39,43 +39,87 @@
 
 
 <!-- SIGN IN MODAL -->
-<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="SignIn" aria-hidden="true">
+<div id="signInModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
       <div class="modal-body">
-        <!-- Email Form Input -->
-        <div class = "form-group col-lg-10 col-lg-offset-1">
-          <span class="glyphicon glyphicon-user col-lg-2"></span>
-          <div class = "col-lg-10">
-            {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
-          </div>
+          <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Sign In</a></li>
+              <li><a href="#tab2" data-toggle="tab">Sign Up</a></li>
+              <li><a href="#tab3" data-toggle="tab">Forgot Password</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                <h4 class="col-lg-10 col-lg-offset-1">Don't loose more time...SIGN IN!</h4>
+                <!-- Email Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('email', 'Email', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = " col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+                  </div>
+                </div>
 
-          <div class = "col-sm-12">
-          </div>
-        </div>
+                <!-- Password Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('password', 'Password', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::text('password', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
+                  </div>
+                </div>                        
+              </div>
 
-        <!-- Password Form Input -->
-        <div class = "form-group col-lg-10 col-lg-offset-1">
-          <span class="glyphicon glyphicon-lock col-lg-2"></span>
-          <div class = "col-sm-10">
-            {!! Form::email('password', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
-          </div>
+              <div class="tab-pane" id="tab2">
+                <h4 class="col-lg-10 col-lg-offset-1">Do you need help? SIGN UP now!</h4>
+                <!-- Name Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('name', 'Name', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = " col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::text('text', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+                  </div>
+                </div>
 
-          <div class = "col-sm-12">
-          </div>
-        </div>
+                <!-- Email Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('email', 'Email', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = " col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+                  </div>
+                </div>
 
-        <!-- Forgot passowrd -->
-        <a href="" class="col-lg-10 col-lg-offset-1">Forgot password?</a>
+                <!-- Password Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('password', 'Password', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::text('password', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
+                  </div>
+                </div>
+
+                <!-- Repeat Password Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('password2', 'Repeat Password', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::text('password2', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
+                  </div>
+                </div>  
+              </div>
+
+              <div class="tab-pane" id="tab3">
+                <!-- Email Form Input -->
+                <div class = "form-group col-lg-10 col-lg-offset-1">
+                  {!! Form::label('email', 'Email', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="submit" class="btn btn-primary">Sign In</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
