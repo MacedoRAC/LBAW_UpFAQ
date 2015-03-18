@@ -12,8 +12,20 @@ html{
 	border: none;
 	border-radius: 0;
 	height: 50px;
+	min-height: 50px;
 	background: #455a64;
 	z-index: 100;
+}
+
+#myNavbar .navbar-collapse,
+#myNavbar .navbar-form{
+	border: none;
+	box-shadow: none;
+}
+
+#myNavbar .navbar-collapse{
+	background-color: #455a64;
+	overflow: hidden !important; 
 }
 
 .navbar-brand{
@@ -75,6 +87,44 @@ html{
 #menuOptions #searchBtn:focus,
 #menuOptions #searchBtn:hover{
 	background: #78909c;
+}
+
+#myNavbar .dropdown.open>a{
+	background: #455a64;
+	box-shadow: none;
+}
+
+#myNavbar .dropdown .username{
+	color: #cfd8dc;
+}
+
+.navbar-nav>li>.dropdown-menu{
+	background: #455a64;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	min-width: 0;
+}
+
+.navbar-nav>li>.dropdown-menu>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+	color: #eceff1;
+	padding: 0;
+	padding-bottom: 3px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.navbar-nav>li>.dropdown-menu>li>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+	background: #455a64;
+	color: #eceff1;
+	-moz-box-shadow: inset #eceff1 0 -3px 0 0;
+	-webkit-box-shadow: inset #eceff1 0 -3px 0 0;
+	-o-box-shadow: inset #eceff1 0 -3px 0 0;
+	box-shadow: inset #eceff1 0 -3px 0 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -24,7 +24,7 @@
 	<body>
 		<div class="row">
 			<!-- NAVBAR -->
-			@include('layouts.navbar_unlogged')
+			@include('layouts.navbar_logged')
 			<!-- NAVBAR END -->
 
 			<!-- PAGE CONTENT -->
