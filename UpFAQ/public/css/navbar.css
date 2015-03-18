@@ -12,8 +12,20 @@ html{
 	border: none;
 	border-radius: 0;
 	height: 50px;
+	min-height: 50px;
 	background: #455a64;
 	z-index: 100;
+}
+
+#myNavbar .navbar-collapse,
+#myNavbar .navbar-form{
+	border: none;
+	box-shadow: none;
+}
+
+#myNavbar .navbar-collapse{
+	background-color: #455a64;
+	overflow: hidden !important; 
 }
 
 .navbar-brand{
@@ -94,11 +106,8 @@ html{
 	min-width: 0;
 }
 
-.navbar-nav>li>.dropdown-menu>li{
-	/*padding: 0;-*/	
-}
-
-.navbar-nav>li>.dropdown-menu>li>a{
+.navbar-nav>li>.dropdown-menu>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
 	color: #eceff1;
 	padding: 0;
 	padding-bottom: 3px;
@@ -108,7 +117,8 @@ html{
 	transition: all 0.3s ease;
 }
 
-.navbar-nav>li>.dropdown-menu>li>a:hover{
+.navbar-nav>li>.dropdown-menu>li>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
 	background: #455a64;
 	color: #eceff1;
 	-moz-box-shadow: inset #eceff1 0 -3px 0 0;
