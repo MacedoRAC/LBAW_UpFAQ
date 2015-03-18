@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', ['as'=>'homepage', 'uses'=>'PagesController@index']);
 
 Route::get('/profile', 'PagesController@show_perfil');
 

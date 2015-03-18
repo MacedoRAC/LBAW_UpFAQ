@@ -104,6 +104,7 @@ html{
 	box-shadow: none;
 	border: none;
 	min-width: 0;
+	position: relative;
 }
 
 .navbar-nav>li>.dropdown-menu>li>a,
