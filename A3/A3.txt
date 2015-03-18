@@ -1,0 +1,85 @@
+====== Protótipo da Interface com o Utilizador ======
+
+Este artefacto, o Protótipo da Interface com o Utilizador (ou protótipo horizontal) tem dois objetivos:
+  * ajudar a identificar e descrever os requisitos do utilizador;
+  * dar uma ideia de como será a interface com o utilizador (IU) do produto a desenvolver e suscitar novos requisitos.
+
+===== - Interface e princípios gerais =====
+
+
+{{:lbaw1444:imagem_do_website1.png?200|}}\\
+Figura 1: Imagem do website
+
+Elementos Comuns a todas as páginas:
+  * optou-se pela cor azul e branco para construir todo o website
+  *  o website adapta-se a todos os tipos de tamanho(PC's, telemóveis e tablets)
+  * os pontos comuns às várias páginas (por exemplo a ligação à página principal, o campo de procura ) permanecem na mesma posição relativa
+  * utilizamos vários eventos de "touch" para facilitar a interação com o website nos dispositivos móveis(por exemplo para mostrar/ocultar a lista de utilizadores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===== - Visão Geral =====
+
+O //Sitemap// é uma representação hierárquica da estrutura de um site, composta por páginas web.
+Desta forma, é fornecida à equipa de projeto uma visão de como o sítio vai ser construído, ajudando nomeadamente a esclarecer a hierarquia de informação [[biblio|[STMAP] ]].
+
+{{:lbaw1444:sitemap5.0.png?200|}}\\
+
+Figura 2: Mapa do sítio 
+
+===== - Interações =====
+
+São descritas as sequências de passos das principais interações com o sistema. O intuito é fornecer uma visão clara da utilização do sistema. 
+
+São apresentados fluxogramas para uma maior compreensão dos processos de autenticação e de navegação na página de perfil. De notar que não são revelados detalhes da interação, mas apenas uma visão geral da utilização e comportamento do sistema.
+==== Cenário 1: Login ====
+
+{{:lbaw1444:loginactivity.png?300|}}\\
+Figura 3: Diagrama de atividade do Login.
+
+==== Cenário 2: Perfil ====
+
+{{:lbaw1444:perfilactivity.png?300|}}\\
+Figura 4: Diagrama de atividade do Perfil
+
+===== - Interfaces =====
+
+{{ :lbaw1444:upfaq_-_homepage.png?direct&200 |}}
+Figura 5: Página inicial da plataforma: aqui o utilizador (autenticado ou não) consegue ver e aceder às últimas 5 perguntas que foram criadas, às 5 perguntas melhor cotadas e aos 5 utilizadores com melhores cotações do mês anterior.
+\\
+\\
+\\
+
+{{ :lbaw1444:upfaq_-_questions_and_answers_page.png?direct&200 |}}
+Figura 6: Página da pergunta e das respectivas respostas: aqui qualquer utilizador pode ver a pergunta e as respostas já existentes assim como cotar as mesmas. No entanto apenas um utilizador autenticado pode responder à pergunta ou comentar uma ou mais respostas.
+\\
+\\
+\\
+
+{{ :lbaw1444:upfaq_-_profile_page.png?direct&200 |}}
+Figura 7: Página do perfil do utilizador vista por um utilizador autenticado, que não o próprio. Este só pode ver a informação que for pública. O utilizador proprietário do perfil vê toda a informação quer pública e privada e pode alterar o seu conteúdo, assim como a sua visibilidade. O administrador da plataforma, independentemente da visibilidade pode ver sempre os contactos do utilizador.
+
+
+ --- //LBAW 2014/15//
+
+[[index|[upFAQ] ]]
+

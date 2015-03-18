@@ -1,0 +1,48 @@
+====== A2: Atores. User stories ======
+
+Este artefacto contém a especificação dos atores e das respetivas users stories, 
+funcionando como documentação ágil dos requisitos do projeto.
+
+Para o sistema **PerguntaseRespostasColaborativas ** consideram-se os atores que se apresentam na Figura 1 e que são descritos na Tabela 1.
+
+{{actors1.png?200|}}\\
+Figura 1: Atores.
+
+^ Identificador  ^ Descrição                                                                                                                       ^ Examplos  ^
+| Utilizador     | Utilizador genérico; pode consultar todas as perguntas, e votar nas respostas                                                   | n/a       |
+| Visitante      | Utilizador não-autenticado; pode registar-se no sistema e com esses dados autenticar-se                                         | n/a       |
+| Autenticado    | Utilizador autenticado; pode gerir o seu perfil.Criar, responder e seguir perguntas ou comentar respostas dadas                 | Paulo     |
+| Autor          | Utilizador autenticado que criou a pergunta;pode editar ou encerrar a pergunta                                                  | André     |
+| Admin          | Utilizador autenticado; assegura o cumprimento das regras do website por parte dos utilizadores e auxilia-os em caso de dúvida  | admin     |
+Tabela 1: Descrição dos atores.
+
+===== Atores =====
+Na nossa plataforma, consideramos 5 atores diferentes: utilizador, autenticado,visitante,  administrador e autor.
+
+Para o sistema PerguntaseRespostasColaborativas consideram-se as user stories que se apresentam na seguinte Tabela.
+
+^ Identificador  ^ Ator                        ^ Nome                 ^ Prioridade  ^ Story Points  ^ Descrição                                                                                         ^
+| **US01**       | Utilizador genérico         | Lista                | alta        | 2             | Como Utilizador quero poder pesquisar perguntas pelo nome                                         |
+| US02           | Utilizador genérico         | Pontuação            | média       | 2             | Como Utilizador quero poder visualizar quais os utilizadores com melhores pontuações              |
+| **US03**       | Utilizador genérico         | Gosto                | alta        | 2             | Como Utilizador quero poder assinalar um "thumbs up" para votar numa resposta/pergunta            |
+| **US04**       | Utilizador genérico         | Não-Gosto            | alta        | 2             | Como Utilizador quero poder assinalar um "thumbs down" para votar numa resposta/pergunta          |
+| **US05**       | Utilizador genérico         | Perfil-Genérico      | média       | 2             | Como Utilizador quero poder visualizar o perfil de utilizadores registados                        |
+| **US06**       | Utilizador não-registado    | Registo              | alta        | 1             | Como Visitante quero poder registar-me no sistema para fazer login                                |
+| **US07**       | Utilizador não-autenticado  | Autenticação         | alta        | 1             | Como Visitante quero poder autenticar-me no sistema para ter acesso a outros privilégios          |
+| **US08**       | Utilizador não-autenticado  | RecuperaçãoPassword  | alta        | 3             | Como Visitante quero poder recuperar a minha password                                             |
+| US09           | Administrador               | Edição               | média       | 4             | Como Administrador quero poder Apagar ou editar perguntas                                         |
+| US10           | Administrador               | Fecho-Administração  | média       | 3             | Como Administrador bloquear uma pergunta                                                          |
+| US11           | Administrador               | Aviso                | média       | 3             | Como Administrador posso adicionar emails à "blacklist"                                           |
+| **US12**       | Utilizador autenticado      | Perfil               | alta        | 3             | Como Autenticado quero poder consultar  e modificar a informação do meu perfil                    |
+| US13           | Utilizador autenticado      | Filtro               | média       | 4             | Como Autenticado quero poder pesquisar perguntas utilizando filtros                               |
+| US14           | Utilizador autenticado      | Pesquisatags         | média       | 3             | Como Autenticado quero poder pesquisar perguntas que contenham uma ou mais tags pesquisadas       |
+| US15           | Utilizador autenticado      | Pesquisa             | média       | 3             | Como Autenticado quero poder pesquisar perguntas fazendo display em lista, grelha                 |
+| US16           | Utilizador autenticado      | Segue                | média       | 2             | Como Autenticado quero poder seguir perguntas                                                     |
+| **US17**       | Utilizador autenticado      | Criação              | alta        | 4             | Como Autenticado quero poder colocar uma pergunta (pode ser escolha múltipla ou pergunta aberta)  |
+| **US18**       | Utilizador autenticado      | Resposta             | alta        | 3             | Como Autenticado quero poder inserir uma resposta                                                 |
+| US19           | Utilizador autenticado      | Edição-Resposta      | média       | 2             | Como Autenticado quero poder editar ou remover a minha resposta a uma pergunta                    |
+| US20           | Utilizador autenticado      | Comentário           | média       | 2             | Como Autenticado quero poder adicionar um comentário a uma resposta                               |
+| US21           | Utilizador autenticado      | Edição-Comentário    | média       | 2             | Como Autenticado quero poder editar ou remover um comentário (feito por mim) a uma resposta       |
+| US22           | Utilizador autenticado      | Pedido-Remoção       | média       | 2             | Como Autenticado quero poder efectuar pedido ao administrador para remover uma pergunta/resposta  |
+| **US23**       | Autor                       | Fecho                | alta        | 2             | Como autor fechar ou editar uma pergunta feita por mim                                            |
+Tabela 2: User stories.                     
