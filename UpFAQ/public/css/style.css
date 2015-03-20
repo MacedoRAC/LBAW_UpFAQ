@@ -96,3 +96,99 @@ ul li{
 #signInModal .nav{
 	background: #455A64;
 }
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	background: transparent;
+	color: #ECEFF1;
+	border-radius: 0;
+	border: none;
+	padding: 10px 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	-moz-box-shadow: inset #eceff1 0 -6px 0 0;
+	-webkit-box-shadow: inset #eceff1 0 -6px 0 0;
+	-o-box-shadow: inset #eceff1 0 -6px 0 0;
+	box-shadow: inset #eceff1 0 -6px 0 0;
+}
+
+.tab-content>.tab-pane>h4{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: #455A64;
+}
+
+.tab-pane>.form-group,
+.tab-pane>.form-group>label,
+.tab-pane>.form-group>div,
+.tab-pane>.form-group>div>input{
+	padding: 0;
+}
+
+.tab-pane>.form-group{
+	border-bottom: 0.2em solid #455A64;
+}
+
+.tab-pane>.form-group>label{
+	margin: 0;
+  	padding-top: 8px;
+  	color: #455A64;
+}
+
+.tab-pane input{
+	border: none;
+	border-radius: 0;	
+	background-color: transparent;
+	box-shadow: none;
+   	color: #333;
+}
+
+.tab-pane input:focus{
+	box-shadow: none;
+}
+
+#signInModal .modal-footer{
+	text-align: center;
+	border: none;
+}
+
+#signInModal button{
+	background: #78909c;
+	color: #333;
+	border-color: #78909c;
+	text-shadow: none;
+	margin-top: 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#signInModal button:focus{
+	outline: none;
+    box-shadow: none;
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#signInModal button:hover{
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#signInModal .btnCont{
+	text-align: center;
+}

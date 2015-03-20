@@ -46,11 +46,11 @@
           <div class="tabbable"> <!-- Only required for left/right tabs -->
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab1" data-toggle="tab">Sign In</a></li>
-              <li><a href="#tab2" data-toggle="tab">Sign Up</a></li>
+              <li><a href="#tab2" data-toggle="tab">Register</a></li>
               <li><a href="#tab3" data-toggle="tab">Forgot Password</a></li>
             </ul>
             <div class="tab-content">
-              <div class="tab-pane active" id="tab1">
+              <div class="tab-pane fade in active" id="tab1">
                 <h4 class="col-lg-10 col-lg-offset-1">Don't loose more time...SIGN IN!</h4>
                 <!-- Email Form Input -->
                 <div class = "form-group col-lg-10 col-lg-offset-1">
@@ -66,10 +66,16 @@
                   <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     {!! Form::text('password', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
                   </div>
-                </div>                        
+                </div>
+
+                <div class = "form-group" style="border: none;">
+                  <div class = "col-xs-12 btnCont">
+                    <button type = "submit" class = "btn btn-default" id = "submitBtn">Sign In</button>
+                  </div>
+                </div>
               </div>
 
-              <div class="tab-pane" id="tab2">
+              <div class="tab-pane fade" id="tab2">
                 <h4 class="col-lg-10 col-lg-offset-1">Do you need help? SIGN UP now!</h4>
                 <!-- Name Form Input -->
                 <div class = "form-group col-lg-10 col-lg-offset-1">
@@ -97,19 +103,32 @@
 
                 <!-- Repeat Password Form Input -->
                 <div class = "form-group col-lg-10 col-lg-offset-1">
-                  {!! Form::label('password2', 'Repeat Password', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
+                  {!! Form::label('password2', 'Password', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
                   <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                    {!! Form::text('password2', null, ['class' => 'form-control', 'placeholder' => 'Password']) !!}
+                    {!! Form::text('password2', null, ['class' => 'form-control', 'placeholder' => 'Repeat Password']) !!}
                   </div>
-                </div>  
+                </div> 
+
+                <div class = "form-group" style="border: none;">
+                  <div class = "col-xs-12 btnCont">
+                    <button type = "submit" class = "btn btn-default" id = "submitBtn">Register</button>
+                  </div>
+                </div> 
               </div>
 
-              <div class="tab-pane" id="tab3">
+              <div class="tab-pane fade" id="tab3">
+                <h4 class="col-lg-10 col-lg-offset-1">Enter your email to reset password</h4>
                 <!-- Email Form Input -->
                 <div class = "form-group col-lg-10 col-lg-offset-1">
                   {!! Form::label('email', 'Email', ['class' => 'col-lg-2 col-md-2 col-sm-12 col-xs-12']) !!}
                   <div class = "col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+                  </div>
+                </div>
+
+                <div class = "form-group" style="border: none;">
+                  <div class = "col-xs-12 btnCont">
+                    <button type = "submit" class = "btn btn-default" id = "submitBtn">Reset</button>
                   </div>
                 </div>
               </div>
