@@ -13,6 +13,8 @@
 
 Route::get('/', ['as'=>'homepage', 'uses'=>'PagesController@index']);
 
-Route::get('/profile', 'PagesController@show_perfil');
+Route::get('/profile', ['as'=>'profile', 'uses'=>'PagesController@show_perfil']);
+
+Route::get('/search', ['as'=>'search', 'uses'=>'PagesController@search']);
 
 Route::get('/question', ['as'=>'showQuestion', 'uses'=>'QuestionsController@show']);

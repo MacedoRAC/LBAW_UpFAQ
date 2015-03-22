@@ -2,6 +2,7 @@
 
 @section('cssFiles')
 	<link href="{{ asset('css/showProfile.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/carroussel.css') }}" rel="stylesheet">
 @stop
 
 
@@ -48,9 +49,7 @@
 						8
 					</p>
 				</div>
-			
 			</div>
-
 		</div>
 
 		<div class="bio col-lg-12">
@@ -62,73 +61,120 @@
 	<div class="achievements">
 		<div class="container">
 			<img class="col-lg-offset-2 col-lg-6 image_banner" src="{{ asset('img/banner_achievents.png') }}" alt="Achivements">
-				<div class="main_achiev">
-					<img class="col-lg-8 col-lg-offset-1" src="{{ asset('img/achiev3.png') }}" alt="last earned">
-					<h2>You have answered 10 or more question !</h2>
-					<p>Achievement unlocked 14th March 2015</p>
-				</div>
-				<div class="other_ach">
-					<table class="achiev_table">
-						<tr>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-							<td>
-								<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
-								<p>Achievement's name</p>
-							</td>
-						</tr>
-					</table>
-				</div>
+
+			<div id="contentContainer" class="trans3d"> 
+				<section id="carouselContainer" class="trans3d">
+					<figure id="item1" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">1</div>
+					</figure>
+					<figure id="item2" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">2</div>
+					</figure>
+					<figure id="item3" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">3</div>
+					</figure>
+					<figure id="item4" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">4</div>
+					</figure>
+					<figure id="item5" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">5</div>
+					</figure>
+					<figure id="item6" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">6</div>
+					</figure>
+					<figure id="item7" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">7</div>
+					</figure>
+					<figure id="item8" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">8</div>
+					</figure>
+					<figure id="item9" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">9</div>
+					</figure>
+					<figure id="item10" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">10</div>
+					</figure>
+					<figure id="item11" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">11</div>
+					</figure>
+					<figure id="item12" class="carouselItem trans3d">
+						<div class="carouselItemInner trans3d">12</div>
+					</figure>	
+				</section>
+			</div>
 		</div>
 	</div>
 </div>
-
 @stop
+
+@section('jsFiles')
+	<script src="{{ asset('js/TweenMax.min.js') }}"></script>
+	<script src="{{ asset('js/carrousel.js') }}"></script>
+@stop
+
+<!--<div class="main_achiev">
+				<img class="col-lg-8 col-lg-offset-1" src="{{ asset('img/achiev3.png') }}" alt="last earned">
+				<h2>You have answered 10 or more question !</h2>
+				<p>Achievement unlocked 14th March 2015</p>
+			</div>
+			
+			<div class="other_ach">
+				<table class="achiev_table">
+					<tr>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev1.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+						<td>
+							<img class="col-lg-3" src="{{ asset('img/achiev2.png') }}" alt="last earned">
+							<p>Achievement's name</p>
+						</td>
+					</tr>
+				</table>
+			</div>-->

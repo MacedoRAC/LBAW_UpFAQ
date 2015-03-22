@@ -86,4 +86,9 @@ class PagesController extends Controller {
 		return view('pages.show_perfil');
 	}
 
+	public function search()
+	{
+		return view('pages.search');
+	}
+
 }

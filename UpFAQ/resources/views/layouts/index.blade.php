@@ -42,8 +42,9 @@
 		<script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-		<!-- ACCORDION -->
 		<!-- SCRIPT -->
 		<script src="{{ asset('js/script.js') }}"></script>
+
+		@yield('jsFiles')
 	</footer>
 </html>
