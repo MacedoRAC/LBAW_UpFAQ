@@ -2,21 +2,21 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<!-- Bootstrap CSS -->
-			<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-			<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
-			<!-- FONT AWSOME -->
-			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-			<!-- ACCORDION -->
-			<!-- Other CSS files -->
-			<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-			<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
-			<link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+		<!-- Bootstrap CSS -->
+		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
+		<!-- FONT AWSOME -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- ACCORDION -->
+		<!-- Other CSS files -->
+		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/footer.css') }}" rel="stylesheet">
 
-			@yield('cssFiles')
+		@yield('cssFiles')
 		
 		<link rel = "shortcut icon" href = "{{ asset('img/favicon.png') }}">
 		<title>UpFAQ</title>
