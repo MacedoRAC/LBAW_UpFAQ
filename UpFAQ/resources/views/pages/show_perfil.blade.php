@@ -31,19 +31,19 @@
 				</div>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{{ asset('img/twitter.png') }}" alt="twitter_logo">
-					<p class="social_text col-lg-10">https://www.twitter.com</p>
+					<p class="social_text col-lg-10"><a href="">https://www.twitter.com</a></p>
 				</div>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{{ asset('img/google+.png') }}" alt="google_logo">
-					<p class="social_text col-lg-10">https://plus.google.com</p>
+					<p class="social_text col-lg-10"><a href="">https://plus.google.com</a></p>
 				</div>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{{ asset('img/facebook.png') }}" alt="facebook_logo">
-					<p class="social_text col-lg-10">https://www.facebook.com</p>
+					<p class="social_text col-lg-10"><a href="">https://www.facebook.co</a></p>
 				</div>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{{ asset('img/linkedin.png') }}" alt="linkedin_logo">
-					<p class="social_text col-lg-10">https://www.linkedin.com/user.8532</p>
+					<p class="social_text col-lg-10"><a href="">https://www.linkedin.com</a></p>
 				</div>
 			</div>
 
@@ -82,7 +82,7 @@
 			<div class="carousel col-lg-offset-3 col-lg-6">
 			    <div class="achiev col-lg-12">
 			    	<img class="col-lg-8 col-lg-offset-2 col-sm-12" src="{{ asset('img/achiev1.png') }}" alt="last earned">
-					<h2 class="col-lg-10 col-lg-offset-1">You have answered 10 or more question !</h2>
+					<h2 class="col-lg-10 col-lg-offset-1">You have answered 10 or more question!</h2>
 					<p class="col-lg-10 col-lg-offset-1">Achievement unlocked 14th March 2015</p>
 				</div>
 			    <div class="achiev col-lg-12">

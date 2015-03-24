@@ -2,6 +2,11 @@
 	background:#c2c2c2; 
 	height: 300px;
 	margin-top: 70px;
+	height: 100%;
+}
+
+#myFooter .container{
+	padding-bottom: 30px;
 }
 
 #myFooter #form .form-group>div{

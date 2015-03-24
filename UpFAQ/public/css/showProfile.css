@@ -10,6 +10,9 @@
 
 .info h2{
 	padding-bottom: 30px;
+	color: #455a64;
+	font-weight: 1000;
+	text-transform: uppercase;
 }
 
 #profile_information .contactCont{
@@ -22,20 +25,39 @@
 }
 
 #profile_information .info .social_text{
-	position: relative;
 	padding-left: 5px;
 	color: #333333;
 }
 
-#profile_information .info p{
-	font-size: 14px;
+.contactCont .social_text a{
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 #profile_information .achievements{
-	margin-top: 60px 0 0 0;
+	margin: 60px 0 60px 0;
 	background: #455a64;
 	padding-bottom: 0px;
 	border-bottom: 0px;
+}
+
+.achievements .container{
+	padding-bottom: 40px;
+}
+
+.carousel div h2{
+	color: #ECEFF1;
+	text-align: center;
+}
+
+.carousel div p{
+	color: #2F95D8;
+	text-align: center;
+}
+
+.slick-dots li button:before{
+	color: #ECEFF1 !important;
 }
 
 #profile_information .image_banner{
@@ -58,5 +80,21 @@
 #profile_information .bio{
 	padding-left: 20px;
 	padding-top: 20px;
+	text-align: justify;
 }
 
+.bio>h3{
+	color: #455a64;
+}
+
+.rating>div>h4{
+	color: #2F95D8;
+}
+
+.rating>div>p{
+	font-size: 1.2em;
+}
+
+.rating>div>p>i{
+	font-size: 2em;
+}
